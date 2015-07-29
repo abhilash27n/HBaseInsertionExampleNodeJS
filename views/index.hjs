@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Search</h1>
+    <form action='/' method='post' id='countrySubmit'>
+    	<table>
+	    	<tr>
+	    		<td>Id</td>
+	    		<td><input type="text" name="rowid" id="rowid" value="{{ idnum }}"></td>
+	    	</tr>
+	    	<tr>
+	    		<td>Search</td>
+	    		<td><input type="text" name="search" id="search"></td>
+	    	</tr>
+	    	<tr>
+	    		<td><input type="submit" value="Submit" id="submitButton"></td>	
+	    	</tr>
+	    </table>
+
+    </form>
+    <p>Searched Term: {{ searchedTerm }}</p>
+  </body>
+</html>
